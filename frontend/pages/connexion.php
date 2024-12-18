@@ -15,11 +15,11 @@
     <main class="flex justify-start flex-col items-center h-[99vh]">
         <h2 class="text-white text-4xl mt-10 md:text-6xl md:mt-24 font-bold">Se connecter</h2>
         <section class="flex justify-center h-[99%] items-center mt-10 md:mt-24 text-white w-[50%] " id="inscription">
-            <form class="flex gap-4 flex-col text-xl md:text-4xl" action="" method="post">
+            <form class="flex gap-4 flex-col text-xl md:text-4xl" action="../../backend/process/connections/userConnection.php" method="post">
                 <div class="md:flex-row md:justify-between md:gap-12 md:flex">
                     <div class="md:flex md:flex-col">
-                        <label for="username">Entrez votre pseudo: </label>
-                        <input class="text-white bg-[#777777] rounded-lg py-2 md:mt-12" type="text" name="username" id="username">
+                        <label for="mail">Entrez votre mail: </label>
+                        <input class="text-white bg-[#777777] rounded-lg py-2 md:mt-12" type="text" name="mail" id="mail">
                     </div>
                     <div class="md:flex md:flex-col mt-10 md:mt-0">
                         <label for="password">Entrez votre mot de passe: </label>
