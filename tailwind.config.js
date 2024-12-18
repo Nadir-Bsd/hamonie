@@ -14,6 +14,9 @@ module.exports = {
         'black-blue' : '#1B262A',
         'white': '#ECECEC',
       },
+      fontFamily: {
+        roboto: ['Roboto', 'ui-sans-serif', 'system-ui'], // Ajoutez ici
+      },
       keyframes: {
         animStar: {
           from: { transform: "translateY(0px)" },
