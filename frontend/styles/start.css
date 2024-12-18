@@ -6,3 +6,10 @@
 @import './fond.css';
 
 @import '@fontsource/roboto';
+
+/* CLASSE CSS */
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
