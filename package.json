@@ -1,0 +1,15 @@
+{
+  "name": "harmonie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+"scripts": {
+  "build:css": "npx tailwindcss -i ./frontend/styles/start.css -o ./frontend/styles/end.css --watch"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
