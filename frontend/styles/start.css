@@ -6,3 +6,24 @@
 @import './fond.css';
 
 @import '@fontsource/roboto';
+
+
+
+/************************************************************
+************************************************************
+**************************************************************
+********* AJOUT CSS MANUEL */
+/* Masque la barre de défilement sur Chrome, Safari et Edge */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Masque la barre sur les navigateurs basés sur WebKit */
+}
+
+/* Masque la barre de défilement sur Firefox */
+.scrollbar-hide {
+    scrollbar-width: none; /* Masque la barre de défilement sur Firefox */
+}
+
+/* Masque la barre sur Internet Explorer et Edge Legacy */
+.scrollbar-hide {
+    -ms-overflow-style: none; /* Désactive la barre sur IE et Edge Legacy */
+}

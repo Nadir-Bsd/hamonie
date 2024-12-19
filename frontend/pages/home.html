@@ -18,7 +18,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class= "text-white">
+<body class="text-white">
     <!-- Les étoiles de fond :  -->
     <header class="m-10">
         <div class="flex justify-end align-middle gap-6">
@@ -28,24 +28,135 @@
     </header>
 
     <section class="m-3">
-        <!-- ARTISTES -->
-        <article>
-            <h1 class="text-white font-roboto font-semibold	 text-2xl mb-4"> Vos artistes </h1>
+        <!------------------------ ARTISTES ---------------------------------------------------------------------------------------->
+        <article class="mb-7">
+            <h1 class="text-white font-roboto font-semibold text-3xl mb-10">Vos artistes</h1>
 
-            <div class="flex gap-4">
-                <!-- A REMPLACER CODE PHP-->
-                <div class="">
-                    <img src="../img/Icones/Annexe - mise en page/Screen Shot 2021-12-08 at 14.18 1.png" alt=""
-                        class=" w-auto">
-                    <h5 class="w-[30%] ">NOM DE L'ARTISTE QUI EST TROP LONG POUR S'ADAPTER</h5>
+            <!-- Conteneur scrollable -->
+            <div class="flex flex-row gap-5 overflow-x-auto scrollbar-hide">
+                <!-- Carte d'artiste 1 -->
+                <div class="flex flex-col items-center snap-start w-[130px] shrink-0">
+                    <div>
+                        <img src="../img/Icones/Annexe - mise en page/Screen Shot 2021-12-08 at 14.18 1.png" alt=""
+                            class="w-[130px] h-[130px] object-cover rounded-full">
+                    </div>
+                    <h5 class="truncate text-ellipsis overflow-hidden whitespace-nowrap w-[130px] text-center">
+                        NOM DE L'ARTISTE QUI EST TROP LONG POUR S'ADAPTER
+                    </h5>
                 </div>
-                <div class="">
-                    <img src="../img/Icones/Annexe - mise en page/Screen Shot 2021-12-08 at 14.18 1.png" alt=""
-                        class=" w-auto">
-                    <h5 class="w-[30%] truncate">NOM DE L'ARTISTE QUI EST TROP LONG POUR S'ADAPTER</h5>
+
+                <!-- A SUPPRIMER +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                <div class="flex flex-col items-center snap-start w-[130px] shrink-0">
+                    <div>
+                        <img src="../img/Icones/Annexe - mise en page/Screen Shot 2021-12-08 at 14.18 1.png" alt=""
+                            class="w-[130px] h-[130px] object-cover rounded-full">
+                    </div>
+                    <h5 class="truncate text-ellipsis overflow-hidden whitespace-nowrap w-[130px] text-center">
+                        NOM DE L'ARTISTE QUI EST TROP LONG POUR S'ADAPTER
+                    </h5>
                 </div>
-            
-            
+
+                <div class="flex flex-col items-center snap-start w-[130px] shrink-0">
+                    <div>
+                        <img src="../img/Icones/Annexe - mise en page/Screen Shot 2021-12-08 at 14.18 1.png" alt=""
+                            class="w-[130px] h-[130px] object-cover rounded-full">
+                    </div>
+                    <h5 class="truncate text-ellipsis overflow-hidden whitespace-nowrap w-[130px] text-center">
+                        NOM DE L'ARTISTE QUI EST TROP LONG POUR S'ADAPTER
+                    </h5>
+                </div>
+
+                <div class="flex flex-col items-center snap-start w-[130px] shrink-0">
+                    <div>
+                        <img src="../img/Icones/Annexe - mise en page/Screen Shot 2021-12-08 at 14.18 1.png" alt=""
+                            class="w-[130px] h-[130px] object-cover rounded-full">
+                    </div>
+                    <h5 class="truncate text-ellipsis overflow-hidden whitespace-nowrap w-[130px] text-center">
+                        NOM DE L'ARTISTE QUI EST TROP LONG POUR S'ADAPTER
+                    </h5>
+                </div>
+
+                <div class="flex flex-col items-center snap-start w-[130px] shrink-0">
+                    <div>
+                        <img src="../img/Icones/Annexe - mise en page/Screen Shot 2021-12-08 at 14.18 1.png" alt=""
+                            class="w-[130px] h-[130px] object-cover rounded-full">
+                    </div>
+                    <h5 class="truncate text-ellipsis overflow-hidden whitespace-nowrap w-[130px] text-center">
+                        NOM DE L'ARTISTE QUI EST TROP LONG POUR S'ADAPTER
+                    </h5>
+                </div>
+
+                <!-- A SUPPRIMER +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            </div>
+        </article>
+
+
+        <!------------------------ PLAYLISTS ---------------------------------------------------------------------------------------->
+        <article>
+            <h1 class="text-white font-roboto font-semibold text-3xl mb-10">Vos playlists</h1>
+            <!-- Conteneur scrollable -->
+            <div class="flex flex-row gap-5 overflow-x-auto scrollbar-hide">
+                <!-- Carte d'artiste BASE -->
+                <div class="flex flex-col items-center snap-start w-[130px] shrink-0">
+                    <div>
+                        <img src="../img/Icones/Annexe - mise en page/Playlist.png" alt=""
+                            class="w-[130px] h-[130px] object-cover aspect-square">
+                    </div>
+                    <h5 class="truncate text-ellipsis overflow-hidden whitespace-nowrap w-[130px] text-center">
+                        NOM DE LA PLAYLIST QUI EST TROP LONG POUR S'ADAPTER
+                    </h5>
+                </div>
+
+                <!-- A SUPPRIMER +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                <div class="flex flex-col items-center snap-start w-[130px] shrink-0">
+                    <div>
+                        <img src="../img/Icones/Annexe - mise en page/Playlist.png" alt=""
+                            class="w-[130px] h-[130px] object-cover aspect-square">
+                    </div>
+                    <h5 class="truncate text-ellipsis overflow-hidden whitespace-nowrap w-[130px] text-center">
+                        NOM DE LA PLAYLIST QUI EST TROP LONG POUR S'ADAPTER
+                    </h5>
+                </div>
+
+                <div class="flex flex-col items-center snap-start w-[130px] shrink-0">
+                    <div>
+                        <img src="../img/Icones/Annexe - mise en page/Playlist.png" alt=""
+                            class="w-[130px] h-[130px] object-cover aspect-square">
+                    </div>
+                    <h5 class="truncate text-ellipsis overflow-hidden whitespace-nowrap w-[130px] text-center">
+                        NOM DE LA PLAYLIST QUI EST TROP LONG POUR S'ADAPTER
+                    </h5>
+                </div>
+
+                <div class="flex flex-col items-center snap-start w-[130px] shrink-0">
+                    <div>
+                        <img src="../img/Icones/Annexe - mise en page/Playlist.png" alt=""
+                            class="w-[130px] h-[130px] object-cover aspect-square">
+                    </div>
+                    <h5 class="truncate text-ellipsis overflow-hidden whitespace-nowrap w-[130px] text-center">
+                        NOM DE LA PLAYLIST QUI EST TROP LONG POUR S'ADAPTER
+                    </h5>
+                </div>
+
+                <div class="flex flex-col items-center snap-start w-[130px] shrink-0">
+                    <div>
+                        <img src="../img/Icones/Annexe - mise en page/Playlist.png" alt=""
+                            class="w-[130px] h-[130px] object-cover aspect-square">
+                    </div>
+                    <h5 class="truncate text-ellipsis overflow-hidden whitespace-nowrap w-[130px] text-center">
+                        NOM DE LA PLAYLIST QUI EST TROP LONG POUR S'ADAPTER
+                    </h5>
+                </div>
+
+                <!-- A SUPPRIMER +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
             </div>
         </article>
 

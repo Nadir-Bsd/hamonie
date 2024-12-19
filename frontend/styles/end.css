@@ -562,44 +562,32 @@ video {
   margin: 0.75rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
 .mb-10 {
   margin-bottom: 2.5rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
-}
-
-.mt-24 {
-  margin-top: 6rem;
-}
-
-.block {
-  display: block;
-}
-
-.inline-block {
-  display: inline-block;
-}
-
-.mt-14 {
-  margin-top: 3.5rem;
+.mb-7 {
+  margin-bottom: 1.75rem;
 }
 
 .mt-10 {
   margin-top: 2.5rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
 .flex {
   display: flex;
 }
 
-.grid {
-  display: grid;
+.aspect-square {
+  aspect-ratio: 1 / 1;
 }
 
 .h-8 {
@@ -608,6 +596,18 @@ video {
 
 .h-\[100vh\] {
   height: 100vh;
+}
+
+.h-\[130px\] {
+  height: 130px;
+}
+
+.h-\[99\%\] {
+  height: 99%;
+}
+
+.h-\[99vh\] {
+  height: 99vh;
 }
 
 .h-full {
@@ -622,6 +622,10 @@ video {
   width: 100vw;
 }
 
+.w-\[130px\] {
+  width: 130px;
+}
+
 .w-\[200px\] {
   width: 200px;
 }
@@ -630,24 +634,20 @@ video {
   width: 50%;
 }
 
-.w-auto {
-  width: auto;
-}
-
-.w-full {
-  width: 100%;
-}
-
-.w-\[30\%\] {
-  width: 30%;
-}
-
 .w-\[80\%\] {
   width: 80%;
 }
 
+.shrink-0 {
+  flex-shrink: 0;
+}
+
 .cursor-pointer {
   cursor: pointer;
+}
+
+.snap-start {
+  scroll-snap-align: start;
 }
 
 .grid-cols-2 {
@@ -658,12 +658,20 @@ video {
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
 }
 
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-end {
@@ -674,12 +682,12 @@ video {
   justify-content: center;
 }
 
-.gap-12 {
-  gap: 3rem;
-}
-
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-6 {
@@ -695,9 +703,25 @@ video {
   row-gap: 3rem;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.whitespace-nowrap {
   white-space: nowrap;
 }
 
@@ -733,6 +757,11 @@ video {
   --tw-gradient-to: #0A2735 var(--tw-gradient-to-position);
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -748,12 +777,12 @@ video {
   padding-bottom: 1rem;
 }
 
-.align-middle {
-  vertical-align: middle;
-}
-
 .text-center {
   text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .font-roboto {
@@ -775,11 +804,6 @@ video {
   line-height: 2.5rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -791,11 +815,6 @@ video {
 
 .font-semibold {
   font-weight: 600;
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
 .text-white {
@@ -815,6 +834,32 @@ video {
   transition-duration: 300ms;
 }
 
+/************************************************************
+************************************************************
+**************************************************************
+********* AJOUT CSS MANUEL */
+
+/* Masque la barre de défilement sur Chrome, Safari et Edge */
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+  /* Masque la barre sur les navigateurs basés sur WebKit */
+}
+
+/* Masque la barre de défilement sur Firefox */
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  /* Masque la barre de défilement sur Firefox */
+}
+
+/* Masque la barre sur Internet Explorer et Edge Legacy */
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* Désactive la barre sur IE et Edge Legacy */
+}
+
 .hover\:bg-dark-blue:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 18 29 / var(--tw-bg-opacity, 1));
@@ -826,12 +871,24 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .md\:mt-12 {
+    margin-top: 3rem;
+  }
+
   .md\:mt-16 {
     margin-top: 4rem;
   }
 
   .md\:mt-24 {
     margin-top: 6rem;
+  }
+
+  .md\:flex {
+    display: flex;
   }
 
   .md\:grid {
@@ -846,16 +903,25 @@ video {
     width: 99%;
   }
 
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .md\:flex-row {
     flex-direction: row;
   }
 
+  .md\:flex-col {
+    flex-direction: column;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
   .md\:gap-12 {
     gap: 3rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .md\:text-6xl {
