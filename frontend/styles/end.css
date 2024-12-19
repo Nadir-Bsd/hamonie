@@ -562,6 +562,10 @@ video {
   margin: 0.75rem;
 }
 
+.m-7 {
+  margin: 1.75rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -580,6 +584,14 @@ video {
 
 .mt-14 {
   margin-top: 3.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .flex {
@@ -694,6 +706,10 @@ video {
   gap: 1.5rem;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-x-52 {
   -moz-column-gap: 13rem;
        column-gap: 13rem;
@@ -701,6 +717,10 @@ video {
 
 .gap-y-12 {
   row-gap: 3rem;
+}
+
+.overflow-auto {
+  overflow: auto;
 }
 
 .overflow-hidden {
