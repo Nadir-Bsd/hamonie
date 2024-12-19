@@ -23,11 +23,11 @@ session_start();
 foreach ($musics as $music) {
     $infosMusic[] = [
         "artistName"=>$music["name"],
-        "musicName"=>$music["title"],
+        "musicTitle"=>$music["title"],
         "musicImage"=>$music["path"],
     ];
 }
 
 $_SESSION['playlistMusic'] = $infosMusic;
 
-header("location: ../../frontend/pages/playlist.php");
+header("location: ../../../frontend/pages/playlist.php");
