@@ -1,5 +1,5 @@
 <?php
-include_once("../../dataBase/connectionDataBase.php");
+include_once("../../database/connectionDataBase.php");
 
 // recupe des datas
 $email = $_POST['email'];
@@ -19,11 +19,15 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
 // if user exist is not empty
 if(empty($user)){
     header('location: ../../../frontend/pages/connexion.php');
+    exit;
 };
 
 // if password enter and the password(hashed) stock in DB are equal
+
 if(!password_verify($password, $user['password'])) {
+    var_dump("test");
     header('location: ../../../frontend/pages/connexion.php');
+    exit;
 };
 
 session_start();
@@ -35,6 +39,6 @@ $_SESSION['user'] = [
 ];
 
 // redirect to home page if user exist
-// MODIF LE LINK
-header('home page');
+
+header('location: ../../../frontend/pages/home.php');
 ?>

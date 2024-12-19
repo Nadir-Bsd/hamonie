@@ -18,8 +18,8 @@
             <form class="flex gap-4 flex-col text-xl md:text-4xl" action="../../backend/process/connections/userConnection.php" method="post">
                 <div class="md:flex-row md:justify-between md:gap-12 md:flex">
                     <div class="md:flex md:flex-col">
-                        <label for="mail">Entrez votre mail: </label>
-                        <input class="text-white bg-[#777777] rounded-lg py-2 md:mt-12" type="text" name="mail" id="mail">
+                        <label for="email">Entrez votre mail: </label>
+                        <input class="text-white bg-[#777777] rounded-lg py-2 md:mt-12" type="text" name="email" id="email">
                     </div>
                     <div class="md:flex md:flex-col mt-10 md:mt-0">
                         <label for="password">Entrez votre mot de passe: </label>
