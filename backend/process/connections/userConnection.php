@@ -36,6 +36,8 @@ session_start();
 $_SESSION['user'] = [
     "name"=>$user["name"],
     "email"=>$user["email"],
+    "id"=>$user["id"],
+
 ];
 
 // redirect to home page if user exist
